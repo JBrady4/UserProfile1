@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accountOrClear">I dont have an account</string>
+    <string name="profilePicture">profilePicture</string>
+    <string name="saveButton">saveButton</string>
+    <string name="charName">charName</string>
+    <string name="fullName">fullName</string>
+    <string name="passWord">passWord</string>
+    <string name="textView1">textView1</string>
+    <string name="dialogPassword">dialogPassword</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        tools:context="edu.dartmouth.cs.userprofile.MainActivity">
+
+        <!-- UI formatting-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accountOrClear"
+            android:text="I already have an account"
+            android:onClick="onClearClicked"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            android:text="Your character name:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextHeight"
+            android:id="@+id/charName"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            android:text="Full name (private, not listed):" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextHeight"
+            android:id="@+id/fullName"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            android:text="Choose a password:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextHeight"
+            android:id="@+id/passWord"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallMargin"
+            android:text="Share your picture (optional):" />
+
+
+        <ImageView
+            android:layout_width="@dimen/pictureMediumSquare"
+            android:layout_height="@dimen/pictureMediumSquare"
+            android:layout_margin="@dimen/mediumMargin"
+            android:layout_gravity="center"
+            android:id="@+id/profilePicture"
+            android:onClick="onProfilePictureClicked"
+            android:src="@mipmap/ic_launcher"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/saveButton"
+            android:layout_marginTop="@dimen/mediumMargin"
+            android:text="Save"
+            android:onClick="onSaveClicked"
+            />
+    </LinearLayout>
+</ScrollView>

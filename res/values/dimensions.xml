@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="smallMargin">10dp</dimen>
+    <dimen name="editTextHeight">40dp</dimen>
+    <dimen name="pictureMediumSquare">150dp</dimen>
+    <dimen name="mediumMargin">30dp</dimen>
+</resources>
